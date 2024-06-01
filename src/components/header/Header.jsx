@@ -40,13 +40,13 @@ const Header = () => {
                     variant="primary"
                     onClick={handleShow}
                   >
-                    <RxHamburgerMenu size={24} />
+                    <RxHamburgerMenu size={20} />
                   </Button>
                 )}
               </div>
               <div>
                 <p className="dashboard-header">Weeklysumup</p>
-                <p className="header-subtext">
+                <p className="header-subtext word-wrap">
                   Get summary of your weekly online transactions here.
                 </p>
               </div>
