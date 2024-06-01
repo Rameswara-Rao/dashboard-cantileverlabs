@@ -57,10 +57,6 @@ export const goalsData = [
       imgurl: "/mike.svg",
       name: "Mike",
     },
-    {
-      imgurl: "/mia.svg",
-      name: "Mia",
-    },
   ];
 
   export const tableData = [

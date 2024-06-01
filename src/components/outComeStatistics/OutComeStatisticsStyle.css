@@ -8,16 +8,23 @@
   height: 10px;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media (max-width: 1200px) {
   .progressbar-width {
     width: 70vw;
     height: 10px;
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media (max-width: 670px) {
   .progressbar-width {
-    width: 48vw;
+    width: 50vw;
+    height: 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  .progressbar-width {
+    width: 40vw;
     height: 10px;
   }
 }

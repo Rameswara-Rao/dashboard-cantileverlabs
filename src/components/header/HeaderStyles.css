@@ -34,7 +34,7 @@
   margin-right: 10px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
   .dashboard-header {
     font-family: Poppins;
     font-weight: 600;
@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 412.98px) {
+@media (max-width: 416px) {
   .header-subtext {
     font-size: 6px;
   }
