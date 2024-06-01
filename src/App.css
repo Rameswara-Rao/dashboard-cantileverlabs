@@ -190,7 +190,7 @@ label {
   text-indent: -9999px;
   width: 60px;
   height: 30px;
-  background: #EBEBEB;
+  background: #ebebeb;
   display: block;
   border-radius: 50px;
   position: relative;
@@ -203,13 +203,13 @@ label:after {
   left: 1px;
   width: 30px;
   height: 30px;
-  background: #CDCDCD;
+  background: #cdcdcd;
   border-radius: 90px;
   transition: 0.3s;
 }
 
 input:checked + label {
-  background: #70A6E8;
+  background: #70a6e8;
 }
 
 input:checked + label:after {
@@ -221,36 +221,47 @@ label:active:after {
   width: 130px;
 }
 
-
-.reciever-text{
+.reciever-text {
   color: #404040;
   font-weight: 400;
   font-size: 14px;
   padding-left: 10px !important;
 }
 
-.type-date-text{
-  color: #C7C7C7 !important;
+.type-date-text {
+  color: #c7c7c7 !important;
   font-size: 14px;
 }
 
-.amount-text{
+.amount-text {
   font-weight: 500 !important;
-  color:#404040;
+  color: #404040;
 }
 
-.credit-card-left-border{
+.credit-card-left-border {
   border-right: 1px solid rgb(228, 228, 228) !important;
 }
 
-.progressbar-width{
+.progressbar-width {
   width: 32vw;
   height: 10px;
 }
 
 @media only screen and (max-device-width: 1200px) {
-  .progressbar-width{
+  .progressbar-width {
     width: 80vw;
     height: 10px;
   }
+}
+
+.header-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #404040;
+}
+
+.header-role {
+  font-size: 12px;
+  color:#aeaeae;
+  margin-top: -18px;
 }

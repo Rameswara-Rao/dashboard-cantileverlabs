@@ -127,7 +127,25 @@ const App = () => {
             Get summary of your weekly online transactions here.
           </p>
         </Col>
-        <Col sm={2}>sm=8</Col>
+        <Col sm={2}>
+          <Stack direction="horizontal">
+            <div>
+              <img src="/public/header/mail.svg" alt="" />
+            </div>
+            <div className="ms-3">
+              <img src="/public/header/bell.svg" alt="" />
+            </div>
+            <div className="d-flex mt-3 ms-3">
+              <div>
+                <img width={35}  src="/public/header/profile-icon.svg" alt="" />
+              </div>
+              <div className="ms-1">
+                <p className="header-name">Andrew</p>
+                <p className="header-role">Admin account</p>
+              </div>
+            </div>
+          </Stack>
+        </Col>
       </Row>
       <Row>
         <Col sm={12} xl={6}>
