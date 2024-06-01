@@ -10,23 +10,23 @@ const CreditCard = () => {
           <p className="goals-head">Cards</p>
           <Row>
             <Col sm={8} className="credit-card-left-border">
-              <Stack direction="horizontal" gap={0}>
-                <div>
+              <div className="d-flex">
+                <p className="my-auto">
                   <FaAngleLeft size={28} color="#197BBD" />
-                </div>
-                <div>
-                  <img src="/creditcard.svg" alt="" />
-                </div>
-                <div>
+                </p>
+
+                <img src="/creditcard.svg" width={320} alt="" />
+
+                <p className="my-auto">
                   <FaAngleRight size={28} color="#197BBD" />
-                </div>
-              </Stack>
+                </p>
+              </div>
               <div className="ms-5">
                 <ProgressBar
                   variant="success"
                   className={"progress-bar-custom-darkblue"}
                   now={20}
-                  style={{ minWidth: "26vw", height: "10px" }}
+                  style={{ height: "10px" }}
                 />
                 <Stack className="mt-2" direction="horizontal">
                   <div>

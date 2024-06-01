@@ -17,7 +17,7 @@ const SideNavBar = () => {
                 className={`${ind == 0 ? "nav-link-active" : ""} px-4`}
                 key={ind}
               >
-                <img src={data.icon} className="me-4 py-2" alt="" />
+                <img src={data.icon} className="me-2 py-2" alt="" />
                 <span
                   className={`${
                     ind == 0 ? "navlink-text-blue" : "navlink-textt"
