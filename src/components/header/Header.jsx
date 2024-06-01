@@ -1,15 +1,12 @@
 import { useState } from "react";
 
 import {
-  Row,
-  Col,
   Stack,
   Button,
   Offcanvas,
   Container,
   Nav,
   Navbar,
-  NavDropdown,
 } from "react-bootstrap";
 import "./HeaderStyles.css";
 import { useMediaQuery } from "react-responsive";
@@ -25,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg">
         <Container fluid>
           <Navbar.Brand>
             <Offcanvas show={show} onHide={handleClose}>

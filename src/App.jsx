@@ -12,13 +12,13 @@ const App = () => {
       <Row>
         {isDesktop && (
           <Col className="p-0" sm={2}>
-            <div className="sidebar">
+            <div className="sidebar px-3">
               <SideNavBar />
             </div>
           </Col>
         )}
 
-        <Col sm={isDesktop ? 10 : 12} className="main-content p-0 ">
+        <Col sm={isDesktop ? 10 : 12} className="main-content px-3 ">
           <MainContent />
         </Col>
       </Row>

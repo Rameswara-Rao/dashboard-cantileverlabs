@@ -39,11 +39,15 @@
   border-left: 1px solid #197bbd !important;
   border-bottom: 1px solid #197bbd !important;
   border-top: 1px solid #197bbd !important;
-  width: 160px !important;
+  /* width: 160px !important; */
 }
 
 .card-text-mod {
-    font-size: Poppins !important;
-    font-weight: 500;
-    font-size: 1.6rem;
-  }
+  font-size: Poppins !important;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.get-loan-card {
+  height: 10vw !important;
+}

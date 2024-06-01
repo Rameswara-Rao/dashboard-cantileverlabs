@@ -16,7 +16,7 @@ const Goals = () => {
         {goalsData?.map((data, ind) => {
           return (
             <Col key={ind} sm={4}>
-              <Card className="card-mod text-center text-xl-start my-4 mx-4 mx-sm-0">
+              <Card className="card-mod text-center text-xl-start my-4 my-xl-0 mx-4 mx-sm-0">
                 <Card.Body>
                   <p className="goals-card-title">${data.price}</p>
                   <p className="goals-card-subtitle">{data.date}</p>

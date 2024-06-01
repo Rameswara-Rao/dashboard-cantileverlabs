@@ -9,7 +9,7 @@ const CreditCard = () => {
         <Card.Body>
           <p className="goals-head text-center text-xl-start">Cards</p>
           <Row>
-            <Col sm={8} className="credit-card-left-border">
+            <Col sm={8}>
               <div className="d-flex justify-content-center px-3">
                 <p className="my-auto">
                   <FaAngleLeft size={28} color="#197BBD" />
