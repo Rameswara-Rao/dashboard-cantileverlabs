@@ -47,19 +47,13 @@
   }
 }
 
-@media (max-width: 4120.98px) {
-  .dashboard-header {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #404040;
-  }
+@media (max-width: 412.98px) {
   .header-subtext {
-    overflow-wrap: normal;
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 
 .navbar-toggler-icon {
   width: 20px !important;
+  padding: 0px !important;
 }
