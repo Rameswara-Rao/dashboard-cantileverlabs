@@ -20,7 +20,7 @@ const SideNavBar = () => {
                 <img src={data.icon} className="me-4 py-2" alt="" />
                 <span
                   className={`${
-                    ind == 0 ? "navlink-text-blue" : "navlink-text"
+                    ind == 0 ? "navlink-text-blue" : "navlink-textt"
                   }`}
                 >
                   {data.name}

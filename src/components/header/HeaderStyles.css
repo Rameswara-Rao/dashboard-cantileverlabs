@@ -24,3 +24,12 @@
   color: #aeaeae;
   margin-top: -18px;
 }
+
+.sidebaroffcanvas-btn{
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: 0px !important;
+  padding: 0px !important;
+  margin-top: -20px;
+  margin-right: 10px;
+}
