@@ -1,0 +1,43 @@
+.stats-col {
+  margin-top: -15px !important;
+  margin-left: -20px;
+}
+
+.progressbar-width {
+  width: 30vw;
+  height: 10px;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .progressbar-width {
+    width: 80vw;
+    height: 10px;
+  }
+}
+
+.progress-bar-custom-orange .progress-bar {
+  background-color: #fcae73 !important;
+}
+
+.progress-bar-custom-green .progress-bar {
+  background-color: #209d43 !important;
+}
+
+.progress-bar-custom-blue .progress-bar {
+  background-color: #70a6e8 !important;
+}
+
+.progress-bar-text {
+  font-family: Poppins;
+  color: #aeaeae;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.stats-percentage {
+  color: #696969;
+  font-size: 1.4rem;
+  font-family: Poppins;
+  align-items: center;
+  margin-top: -40px;
+}

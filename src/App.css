@@ -1,16 +1,6 @@
-.dashboard-header {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: #404040;
-}
-
-.header-subtext {
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #aeaeae;
-  margin-top: -15px;
+.main-content {
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .card-mod {
@@ -20,28 +10,6 @@
     0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
-.goals-card-title {
-  font-family: Poppins;
-  font-weight: 500;
-  color: #696969;
-  font-size: 1.4rem;
-}
-
-.goals-card-subtitle {
-  font-family: Poppins;
-  font-weight: 400;
-  color: #aeaeae;
-  font-size: 14px;
-  margin-top: -10px;
-}
-
-.goals-card-text {
-  font-family: Poppins;
-  font-weight: 400;
-  color: #404040;
-  font-size: 1.2rem;
-}
-
 .goals-head {
   font-family: Poppins;
   font-size: 1.2rem;
@@ -49,250 +17,19 @@
   font-weight: 500;
 }
 
-.button-goals {
-  width: 18px !important;
-  height: 25px !important;
-  border-radius: 50% !important;
-  font-size: 20px;
-  background-color: #ffc145 !important;
-  border: 0px !important;
-}
 .icon {
   margin-top: -11px;
   margin-left: -8px;
   color: #404040;
 }
 
-.progress-bar-custom-orange .progress-bar {
-  background-color: #fcae73 !important;
-}
-
-.progress-bar-custom-green .progress-bar {
-  background-color: #209d43 !important;
-}
-
-.progress-bar-custom-blue .progress-bar {
-  background-color: #70a6e8 !important;
-}
-
-.progress-bar-custom-darkblue .progress-bar {
-  background-color: #197bbd !important;
-}
-
-.progress-bar-text {
-  font-family: Poppins;
-  color: #aeaeae;
-  font-size: 14px;
-  margin-top: 7px;
-}
-
-.stats-percentage {
-  color: #696969;
-  font-size: 1.4rem;
-  font-family: Poppins;
-  align-items: center;
-  margin-top: -40px;
-}
-
-.tran_user_name {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: #404040;
-}
-
-.stats-col {
-  margin-top: -15px !important;
-  margin-left: -20px;
-}
-
-.new-trac-btn {
-  margin-top: -35px;
-}
-
-.sent-tran-btn {
-  background-color: #ffc145 !important;
-  color: #404040 !important;
-  border: 0px !important;
-  font-family: Poppins !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  border-radius: 5px !important;
-  margin-left: 20px;
-  margin-top: -20px;
-}
-
-.input-text-mod {
-  background-color: transparent !important;
-  font-family: Poppins;
-  border: 1px solid #197bbd !important;
-}
-
-.form-control-mod {
-  border-right: 0px !important;
-  border-left: 1px solid #197bbd !important;
-  border-bottom: 1px solid #197bbd !important;
-  border-top: 1px solid #197bbd !important;
-  width: 160px !important;
-}
-
-.card-text-mod {
-  font-size: Poppins !important;
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-
-.card-text-secondary {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  color: #aeaeae;
-}
-
-.card-text-money {
-  font-weight: 500;
-  color: #404040;
-}
-
-.current-balance-text {
-  color: #197bbd;
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-.current-balance-text-secondary {
-  color: #aeaeae;
-  font-size: 0.9rem;
-  margin-top: -15px;
-}
-
-.income-text {
-  font-size: 1.6rem;
-  color: #439a86;
-  font-weight: 500;
-}
-
-.outcome-text {
-  font-size: 1.6rem;
-  color: #bb4430;
-  font-weight: 500;
-}
-
-/********************* Switch **************************** */
-input[type="checkbox"] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 60px;
-  height: 30px;
-  background: #ebebeb;
-  display: block;
-  border-radius: 50px;
-  position: relative;
-}
-
-label:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 1px;
-  width: 30px;
-  height: 30px;
-  background: #cdcdcd;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
-input:checked + label {
-  background: #70a6e8;
-}
-
-input:checked + label:after {
-  left: calc(100% - 0px);
-  transform: translateX(-100%);
-}
-
-label:active:after {
-  width: 130px;
-}
-
-.reciever-text {
-  color: #404040;
-  font-weight: 400;
-  font-size: 14px;
-  padding-left: 10px !important;
-}
-
-.type-date-text {
-  color: #c7c7c7 !important;
-  font-size: 14px;
-}
-
-.amount-text {
-  font-weight: 500 !important;
-  color: #404040;
-}
-
-.credit-card-left-border {
-  border-right: 1px solid rgb(228, 228, 228) !important;
-}
-
-.progressbar-width {
-  width: 30vw;
-  height: 10px;
-}
-
-@media only screen and (max-device-width: 1200px) {
-  .progressbar-width {
-    width: 80vw;
-    height: 10px;
-  }
-}
-
-.header-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #404040;
-}
-
-.header-role {
-  font-size: 12px;
-  color:#aeaeae;
-  margin-top: -18px;
-}
-
-.sidebar{
+.sidebar {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  border-right: 3px solid #F8F8F8;
+  border-right: 3px solid #f8f8f8;
 }
 
-.navlink-text{
+.navlink-text {
   font-weight: 500;
-  color: #C7C7C7;
-}
-
-.navlink-text-blue{
-  font-weight: 500;
-  color: #197bbd;
-}
-
-.premium-btn{
-  background-color: #FFC145 !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  border: 0px !important;
-  color: #404040 !important;
-  padding: 10px 15px !important;
-}
-
-.nav-link-active{
-  color: #197bbd !important;
-  background-color: #F0F7FF !important;
-  border-radius: 12px;
+  color: #c7c7c7;
 }

@@ -1,0 +1,49 @@
+.card-mod {
+  border: 0px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 5px 10px rgb(154 160 185 / 5%),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.tran_user_name {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+}
+
+.new-trac-btn {
+  margin-top: -35px;
+}
+
+.sent-tran-btn {
+  background-color: #ffc145 !important;
+  color: #404040 !important;
+  border: 0px !important;
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.input-text-mod {
+  background-color: transparent !important;
+  font-family: Poppins;
+  border: 1px solid #197bbd !important;
+}
+
+.form-control-mod {
+  border-right: 0px !important;
+  border-left: 1px solid #197bbd !important;
+  border-bottom: 1px solid #197bbd !important;
+  border-top: 1px solid #197bbd !important;
+  width: 160px !important;
+}
+
+.card-text-mod {
+    font-size: Poppins !important;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }

@@ -1,0 +1,16 @@
+.reciever-text {
+  color: #404040;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 10px !important;
+}
+
+.type-date-text {
+  color: #c7c7c7 !important;
+  font-size: 14px;
+}
+
+.amount-text {
+  font-weight: 500 !important;
+  color: #404040;
+}

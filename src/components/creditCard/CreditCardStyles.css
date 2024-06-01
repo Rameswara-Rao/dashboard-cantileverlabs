@@ -1,0 +1,85 @@
+.credit-card-left-border {
+  border-right: 1px solid rgb(228, 228, 228) !important;
+}
+
+.progress-bar-custom-darkblue .progress-bar {
+  background-color: #197bbd !important;
+}
+
+.current-balance-text-secondary {
+  color: #aeaeae;
+  font-size: 0.9rem;
+  margin-top: -15px;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: #ebebeb;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  background: #cdcdcd;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #70a6e8;
+}
+
+input:checked + label:after {
+  left: calc(100% - 0px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
+.outcome-text {
+  font-size: 1.6rem;
+  color: #bb4430;
+  font-weight: 500;
+}
+
+.income-text {
+  font-size: 1.6rem;
+  color: #439a86;
+  font-weight: 500;
+}
+
+.current-balance-text {
+  color: #197bbd;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.card-text-money {
+  font-weight: 500;
+  color: #404040;
+}
+
+.card-text-secondary {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  color: #aeaeae;
+}

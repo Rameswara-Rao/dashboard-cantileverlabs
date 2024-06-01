@@ -1,0 +1,26 @@
+.dashboard-header {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #404040;
+}
+
+.header-subtext {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #aeaeae;
+  margin-top: -15px;
+}
+
+.header-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #404040;
+}
+
+.header-role {
+  font-size: 12px;
+  color: #aeaeae;
+  margin-top: -18px;
+}

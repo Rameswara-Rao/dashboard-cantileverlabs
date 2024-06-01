@@ -1,0 +1,19 @@
+.nav-link-active {
+  color: #197bbd !important;
+  background-color: #f0f7ff !important;
+  border-radius: 12px;
+}
+
+.navlink-text-blue {
+  font-weight: 500;
+  color: #197bbd;
+}
+
+.premium-btn {
+  background-color: #ffc145 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border: 0px !important;
+  color: #404040 !important;
+  padding: 10px 15px !important;
+}
