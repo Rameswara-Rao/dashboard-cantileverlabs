@@ -9,9 +9,12 @@ import {
   Form,
   Container,
   Table,
+  Navbar,
+  Nav,
 } from "react-bootstrap";
 import { HiPlus } from "react-icons/hi";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+import { MdArrowUpward } from "react-icons/md";
 
 import ProgressBar from "react-bootstrap/ProgressBar";
 
@@ -118,250 +121,321 @@ const App = () => {
       amount: "$430",
     },
   ];
+
+  const navLink = [
+    {
+      name: "Overview",
+      icon: "/sidebar/overview.svg",
+    },
+    {
+      name: "Transactions",
+      icon: "/sidebar/transactions.svg",
+    },
+    {
+      name: "Cards",
+      icon: "/sidebar/cards.svg",
+    },
+    {
+      name: "Invoices",
+      icon: "/sidebar/invoices.svg",
+    },
+    {
+      name: "Goals",
+      icon: "/sidebar/goals.svg",
+    },
+    {
+      name: "Settings",
+      icon: "/sidebar/settings.svg",
+    },
+  ];
   return (
     <Container fluid>
       <Row>
+        <Col sm={2} className="sidebar pl-0">
+          <Navbar expand="lg" className="d-flex flex-column vh-100">
+            <Navbar.Brand>
+              <img src="/sidebar/brandlogo.svg" width={150} alt="" />
+            </Navbar.Brand>
+            <Nav className="flex-column mt-4">
+              {navLink.map((data, ind) => {
+                return (
+                  <Nav.Link
+                    className={`${ind == 0 ? "nav-link-active" : ""} px-4`}
+                    key={ind}
+                  >
+                    <img src={data.icon} className="me-4 py-2" alt="" />
+                    <span
+                      className={`${
+                        ind == 0 ? "navlink-text-blue" : "navlink-textt"
+                      }`}
+                    >
+                      {data.name}
+                    </span>
+                  </Nav.Link>
+                );
+              })}
+            </Nav>
+            <div className="mt-auto text-center mb-3">
+              <img src="/sidebar/premiumimg.svg" className="mb-3" alt="" />
+              <Button className="premium-btn" variant="primary">
+                Upgrade to premium <MdArrowUpward />
+              </Button>
+            </div>
+          </Navbar>
+        </Col>
         <Col sm={10}>
-          <p className="dashboard-header">Weeklysumup</p>
-          <p className="header-subtext">
-            Get summary of your weekly online transactions here.
-          </p>
-        </Col>
-        <Col sm={2}>
-          <Stack direction="horizontal">
-            <div>
-              <img src="/public/header/mail.svg" alt="" />
-            </div>
-            <div className="ms-3">
-              <img src="/public/header/bell.svg" alt="" />
-            </div>
-            <div className="d-flex mt-3 ms-3">
-              <div>
-                <img width={35}  src="/public/header/profile-icon.svg" alt="" />
-              </div>
-              <div className="ms-1">
-                <p className="header-name">Andrew</p>
-                <p className="header-role">Admin account</p>
-              </div>
-            </div>
-          </Stack>
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={12} xl={6}>
-          <Card className="card-mod">
-            <Card.Body>
-              <p className="goals-head">Cards</p>
-              <Row>
-                <Col sm={8} className="credit-card-left-border">
-                  <Stack direction="horizontal" gap={0}>
-                    <div>
-                      <FaAngleLeft size={28} color="#197BBD" />
-                    </div>
-                    <div>
-                      <img src="/creditcard.svg" alt="" />
-                    </div>
-                    <div>
-                      <FaAngleRight size={28} color="#197BBD" />
-                    </div>
-                  </Stack>
-                  <div className="ms-5">
-                    <ProgressBar
-                      variant="success"
-                      className={"progress-bar-custom-darkblue"}
-                      now={20}
-                      style={{ minWidth: "26vw", height: "10px" }}
-                    />
-                    <Stack className="mt-2" direction="horizontal">
-                      <div>
-                        <p className="card-text-secondary">
-                          Weekly payment limit
+          <Row>
+            <Col sm={9}>
+              <p className="dashboard-header">Weeklysumup</p>
+              <p className="header-subtext">
+                Get summary of your weekly online transactions here.
+              </p>
+            </Col>
+            <Col sm={3}>
+              <Stack direction="horizontal">
+                <div>
+                  <img src="/header/mail.svg" alt="" />
+                </div>
+                <div className="ms-3">
+                  <img src="/header/bell.svg" alt="" />
+                </div>
+                <div className="d-flex mt-3 ms-3">
+                  <div>
+                    <img width={35} src="/header/profile-icon.svg" alt="" />
+                  </div>
+                  <div className="ms-1">
+                    <p className="header-name">Andrew</p>
+                    <p className="header-role">Admin account</p>
+                  </div>
+                </div>
+              </Stack>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={12} xl={6}>
+              <Card className="card-mod">
+                <Card.Body>
+                  <p className="goals-head">Cards</p>
+                  <Row>
+                    <Col sm={8} className="credit-card-left-border">
+                      <Stack direction="horizontal" gap={0}>
+                        <div>
+                          <FaAngleLeft size={28} color="#197BBD" />
+                        </div>
+                        <div>
+                          <img src="/creditcard.svg" alt="" />
+                        </div>
+                        <div>
+                          <FaAngleRight size={28} color="#197BBD" />
+                        </div>
+                      </Stack>
+                      <div className="ms-5">
+                        <ProgressBar
+                          variant="success"
+                          className={"progress-bar-custom-darkblue"}
+                          now={20}
+                          style={{ minWidth: "26vw", height: "10px" }}
+                        />
+                        <Stack className="mt-2" direction="horizontal">
+                          <div>
+                            <p className="card-text-secondary">
+                              Weekly payment limit
+                            </p>
+                          </div>
+                          <div className="ms-auto">
+                            <p className="card-text-money">$350.60 / $4000</p>
+                          </div>
+                        </Stack>
+                      </div>
+                    </Col>
+                    <Col sm={4}>
+                      <div className="text-end">
+                        <p className="current-balance-text">$ 2850.75</p>
+                        <p className="current-balance-text-secondary">
+                          Current balance
                         </p>
                       </div>
-                      <div className="ms-auto">
-                        <p className="card-text-money">$350.60 / $4000</p>
+
+                      <div className="text-end">
+                        <p className="income-text">$ 1500.50</p>
+                        <p className="current-balance-text-secondary">Income</p>
                       </div>
-                    </Stack>
-                  </div>
-                </Col>
-                <Col sm={4}>
-                  <div className="text-end">
-                    <p className="current-balance-text">$ 2850.75</p>
-                    <p className="current-balance-text-secondary">
-                      Current balance
-                    </p>
-                  </div>
+                      <div className="text-end">
+                        <p className="outcome-text">$ 350.60</p>
+                        <p className="current-balance-text-secondary">
+                          Outcome
+                        </p>
+                      </div>
+                      <div className="text-end">
+                        <input type="checkbox" id="switch" />
+                        <label for="switch"></label>
+                        <p className="current-balance-text-secondary mt-2">
+                          Deacivate card
+                        </p>
+                      </div>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
 
-                  <div className="text-end">
-                    <p className="income-text">$ 1500.50</p>
-                    <p className="current-balance-text-secondary">Income</p>
-                  </div>
-                  <div className="text-end">
-                    <p className="outcome-text">$ 350.60</p>
-                    <p className="current-balance-text-secondary">Outcome</p>
-                  </div>
-                  <div className="text-end">
-                    <input type="checkbox" id="switch" />
-                    <label for="switch"></label>
-                    <p className="current-balance-text-secondary mt-2">
-                      Deacivate card
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
+              <Card className="card-mod mt-4">
+                <Card.Body>
+                  <p className="goals-head">Transaction history</p>
 
-          <Card className="card-mod mt-4">
-            <Card.Body>
-              <p className="goals-head">Transaction history</p>
-
-              <Table responsive>
-                <thead>
-                  <tr>
-                    <th>Reciever</th>
-                    <th>Type</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tableData.map((data, ind) => {
-                    return (
-                      <tr key={ind} className="row-spacing">
-                        <td className="py-3">
-                          <img src={data.icon} width={22} alt="" />
-                          <span className="reciever-text">{data.reciever}</span>
-                        </td>
-                        <td className="type-date-text py-3">{data.type}</td>
-                        <td className="type-date-text py-3">{data.date}</td>
-                        <td className="amount-text py-3">{data.amount}</td>
+                  <Table responsive>
+                    <thead>
+                      <tr>
+                        <th>Reciever</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Amount</th>
                       </tr>
+                    </thead>
+                    <tbody>
+                      {tableData.map((data, ind) => {
+                        return (
+                          <tr key={ind} className="row-spacing">
+                            <td className="py-3">
+                              <img src={data.icon} width={22} alt="" />
+                              <span className="reciever-text">
+                                {data.reciever}
+                              </span>
+                            </td>
+                            <td className="type-date-text py-3">{data.type}</td>
+                            <td className="type-date-text py-3">{data.date}</td>
+                            <td className="amount-text py-3">{data.amount}</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </Table>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col sm={12} xl={6}>
+              <div>
+                <p className="goals-head mt-5 mt-xl-0">
+                  Goals{" "}
+                  <Button className="button-goals text-center">
+                    <HiPlus size={18} fontWeight={900} className="icon" />
+                  </Button>
+                </p>
+                <Row>
+                  {Goals?.map((data, ind) => {
+                    return (
+                      <Col key={ind} sm={4}>
+                        <Card className="card-mod">
+                          <Card.Body>
+                            <p className="goals-card-title">${data.price}</p>
+                            <p className="goals-card-subtitle">{data.date}</p>
+
+                            <img
+                              className="mt-3"
+                              width={30}
+                              src={data.imgurl}
+                              alt=""
+                            />
+                            <p className="goals-card-text">{data.title}</p>
+                          </Card.Body>
+                        </Card>
+                      </Col>
                     );
                   })}
-                </tbody>
-              </Table>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={12} xl={6}>
-          <div>
-            <p className="goals-head mt-5 mt-xl-0">
-              Goals{" "}
-              <Button className="button-goals text-center">
-                <HiPlus size={18} fontWeight={900} className="icon" />
-              </Button>
-            </p>
-            <Row>
-              {Goals?.map((data, ind) => {
-                return (
-                  <Col key={ind} sm={4}>
+                </Row>
+              </div>
+              <div className="mt-5">
+                <p className="goals-head mb-4">Outcome Statistics</p>
+                <Row>
+                  {stats?.map((data, ind) => {
+                    return (
+                      <Col className="stats-col" key={ind} sm={12}>
+                        <Stack direction="horizontal">
+                          <div className="">
+                            <img src={data.imgurl} width={100} alt="" />
+                          </div>
+                          <div className="">
+                            <ProgressBar
+                              variant="success"
+                              className={`${data.colour} progressbar-width`}
+                              now={parseInt(data.percentage)}
+                            />
+                            <p className="progress-bar-text">{data.title}</p>
+                          </div>
+                          <div className="stats-percentage ms-4">
+                            {data.percentage}%
+                          </div>
+                        </Stack>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </div>
+              <div>
+                <Row>
+                  <Col sm={8} xl={8}>
                     <Card className="card-mod">
                       <Card.Body>
-                        <p className="goals-card-title">${data.price}</p>
-                        <p className="goals-card-subtitle">{data.date}</p>
-
-                        <img
-                          className="mt-3"
-                          width={30}
-                          src={data.imgurl}
-                          alt=""
-                        />
-                        <p className="goals-card-text">{data.title}</p>
+                        <p className="goals-card-title mb-4">New transaction</p>
+                        <Stack direction="horizontal">
+                          {newTransImg.map((data, ind) => {
+                            return (
+                              <div className="mx-2 text-center" key={ind}>
+                                <img src={data.imgurl} alt="" />
+                                <p className="tran_user_name">{data.name}</p>
+                              </div>
+                            );
+                          })}
+                          <div className="my-auto py-auto text-center">
+                            <Button className="button-goals text-center new-trac-btn">
+                              <HiPlus
+                                size={18}
+                                fontWeight={900}
+                                className="icon"
+                              />
+                            </Button>
+                          </div>
+                        </Stack>
+                        <Stack className="mt-3" direction="horizontal">
+                          <div>
+                            <InputGroup className="mb-3">
+                              <Form.Control
+                                placeholder="0"
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                                className="form-control-mod"
+                              />
+                              <InputGroup.Text
+                                id="basic-addon2"
+                                className="input-text-mod"
+                              >
+                                $
+                              </InputGroup.Text>
+                            </InputGroup>
+                          </div>
+                          <div>
+                            <Button className="sent-tran-btn">
+                              Send transfer <FaAngleRight fontSize={12} />
+                            </Button>
+                          </div>
+                        </Stack>
                       </Card.Body>
                     </Card>
                   </Col>
-                );
-              })}
-            </Row>
-          </div>
-          <div className="mt-5">
-            <p className="goals-head mb-4">Outcome Statistics</p>
-            <Row>
-              {stats?.map((data, ind) => {
-                return (
-                  <Col className="stats-col" key={ind} sm={12}>
-                    <Stack direction="horizontal">
-                      <div className="">
-                        <img src={data.imgurl} width={100} alt="" />
-                      </div>
-                      <div className="">
-                        <ProgressBar
-                          variant="success"
-                          className={`${data.colour} progressbar-width`}
-                          now={parseInt(data.percentage)}
-                        />
-                        <p className="progress-bar-text">{data.title}</p>
-                      </div>
-                      <div className="stats-percentage ms-4">
-                        {data.percentage}%
-                      </div>
-                    </Stack>
+                  <Col sm={4} xl={4}>
+                    <Card className="text-white border-0">
+                      <Card.Img src="/cardbg.svg" alt="Card image" />
+                      <Card.ImgOverlay className="d-flex flex-column justify-content-end">
+                        <Card.Text className="card-text-mod">
+                          Get great <br /> loan !
+                          <FaAngleRight className="mb-1" fontSize={18} />
+                        </Card.Text>
+                      </Card.ImgOverlay>
+                    </Card>
                   </Col>
-                );
-              })}
-            </Row>
-          </div>
-          <div>
-            <Row>
-              <Col sm={8} xl={8}>
-                <Card className="card-mod">
-                  <Card.Body>
-                    <p className="goals-card-title mb-4">New transaction</p>
-                    <Stack direction="horizontal">
-                      {newTransImg.map((data, ind) => {
-                        return (
-                          <div className="mx-2 text-center" key={ind}>
-                            <img src={data.imgurl} alt="" />
-                            <p className="tran_user_name">{data.name}</p>
-                          </div>
-                        );
-                      })}
-                      <div className="my-auto py-auto text-center">
-                        <Button className="button-goals text-center new-trac-btn">
-                          <HiPlus size={18} fontWeight={900} className="icon" />
-                        </Button>
-                      </div>
-                    </Stack>
-                    <Stack className="mt-3" direction="horizontal">
-                      <div>
-                        <InputGroup className="mb-3">
-                          <Form.Control
-                            placeholder="0"
-                            aria-label="Recipient's username"
-                            aria-describedby="basic-addon2"
-                            className="form-control-mod"
-                          />
-                          <InputGroup.Text
-                            id="basic-addon2"
-                            className="input-text-mod"
-                          >
-                            $
-                          </InputGroup.Text>
-                        </InputGroup>
-                      </div>
-                      <div>
-                        <Button className="sent-tran-btn">
-                          Send transfer <FaAngleRight fontSize={12} />
-                        </Button>
-                      </div>
-                    </Stack>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col sm={4} xl={4}>
-                <Card className="text-white border-0">
-                  <Card.Img src="/cardbg.svg" alt="Card image" />
-                  <Card.ImgOverlay className="d-flex flex-column justify-content-end">
-                    <Card.Text className="card-text-mod">
-                      Get great <br /> loan !
-                      <FaAngleRight className="mb-1" fontSize={18} />
-                    </Card.Text>
-                  </Card.ImgOverlay>
-                </Card>
-              </Col>
-            </Row>
-          </div>
+                </Row>
+              </div>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

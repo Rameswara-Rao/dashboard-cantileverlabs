@@ -243,7 +243,7 @@ label:active:after {
 }
 
 .progressbar-width {
-  width: 32vw;
+  width: 30vw;
   height: 10px;
 }
 
@@ -264,4 +264,35 @@ label:active:after {
   font-size: 12px;
   color:#aeaeae;
   margin-top: -18px;
+}
+
+.sidebar{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border-right: 3px solid #F8F8F8;
+}
+
+.navlink-text{
+  font-weight: 500;
+  color: #C7C7C7;
+}
+
+.navlink-text-blue{
+  font-weight: 500;
+  color: #197bbd;
+}
+
+.premium-btn{
+  background-color: #FFC145 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border: 0px !important;
+  color: #404040 !important;
+  padding: 10px 15px !important;
+}
+
+.nav-link-active{
+  color: #197bbd !important;
+  background-color: #F0F7FF !important;
+  border-radius: 12px;
 }
