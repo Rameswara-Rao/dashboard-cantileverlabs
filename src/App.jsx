@@ -11,14 +11,14 @@ const App = () => {
     <Container fluid>
       <Row>
         {isDesktop && (
-          <Col sm={2}>
+          <Col className="p-0" sm={2}>
             <div className="sidebar">
               <SideNavBar />
             </div>
           </Col>
         )}
 
-        <Col sm={isDesktop?10:12} className="main-content">
+        <Col sm={isDesktop ? 10 : 12} className="main-content p-0 ">
           <MainContent />
         </Col>
       </Row>

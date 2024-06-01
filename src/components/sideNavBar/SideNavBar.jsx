@@ -1,7 +1,7 @@
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav, Button, Stack } from "react-bootstrap";
 import { MdArrowUpward } from "react-icons/md";
 import { navLinkItems } from "../../utils/constants";
-import "./SideNavBarStyle.css"
+import "./SideNavBarStyle.css";
 
 const SideNavBar = () => {
   return (
@@ -29,7 +29,7 @@ const SideNavBar = () => {
             );
           })}
         </Nav>
-        <div className="mt-auto text-center mb-3">
+        <div className="d-flex flex-column mt-auto text-center mb-3">
           <img src="/sidebar/premiumimg.svg" className="mb-3" alt="" />
           <Button className="premium-btn" variant="primary">
             Upgrade to premium <MdArrowUpward />
