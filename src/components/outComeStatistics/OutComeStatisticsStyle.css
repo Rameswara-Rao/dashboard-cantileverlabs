@@ -4,13 +4,20 @@
 }
 
 .progressbar-width {
-  width: 30vw;
+  width: 27vw;
   height: 10px;
 }
 
 @media only screen and (max-device-width: 1200px) {
   .progressbar-width {
-    width: 80vw;
+    width: 70vw;
+    height: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .progressbar-width {
+    width: 48vw;
     height: 10px;
   }
 }

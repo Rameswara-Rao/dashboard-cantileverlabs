@@ -1,12 +1,12 @@
 import { Button, Row, Col, Card } from "react-bootstrap";
 import { HiPlus } from "react-icons/hi";
 import { goalsData } from "../../utils/constants";
-import "./GoalsStyle.css"
+import "./GoalsStyle.css";
 
 const Goals = () => {
   return (
     <div>
-      <p className="goals-head mt-5 mt-xl-0">
+      <p className="goals-head text-center text-xl-start mt-5 mt-xl-0">
         Goals{" "}
         <Button className="button-goals text-center">
           <HiPlus size={18} fontWeight={900} className="icon" />
@@ -16,7 +16,7 @@ const Goals = () => {
         {goalsData?.map((data, ind) => {
           return (
             <Col key={ind} sm={4}>
-              <Card className="card-mod">
+              <Card className="card-mod text-center text-xl-start my-4 mx-4 mx-sm-0">
                 <Card.Body>
                   <p className="goals-card-title">${data.price}</p>
                   <p className="goals-card-subtitle">{data.date}</p>

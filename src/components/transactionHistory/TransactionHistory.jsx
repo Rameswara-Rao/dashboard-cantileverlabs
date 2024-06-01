@@ -7,7 +7,9 @@ const TransactionHistory = () => {
     <div>
       <Card className="card-mod mt-4">
         <Card.Body>
-          <p className="goals-head">Transaction history</p>
+          <p className="goals-head text-center text-xl-start">
+            Transaction history
+          </p>
 
           <Table responsive>
             <thead>
